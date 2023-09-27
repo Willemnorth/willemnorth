@@ -7,11 +7,10 @@ body {
     color: white;
 }
 
-
 header {
     background-image: url(images/black.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: cover; 
+    background-repeat: no-repeat; 
     background-attachment: fixed;
     padding: 20px 800px 20px 20px;
     display: flex;
@@ -20,21 +19,18 @@ header {
     min-height: 100vh;
 }
 
-
 /* Style the container for the logo */
 .logo-container {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
 }
-
 
 /* Style the logo within the container */
 .logo {
-    max-width: 8%;
-    height: auto;
+    max-width: 8%; 
+    height: auto; 
 }
-
 
 /* Style the "About Me" section */
 .about-me {
@@ -46,14 +42,12 @@ header {
     padding: 20px;
 }
 
-
 /* Style for the photo on the left */
 .photo img {
     max-width: 70%; /* Make the image take up half of the screen */
     border-radius: 70%; /* Make it a circle */
-   
+    
 }
-
 
 /* Style for the container of the header and information on the right */
 .info {
@@ -62,7 +56,6 @@ header {
     flex-direction: column;
     justify-content: center; /* Center vertically */
 }
-
 
 /* Style the "About Me" header */
 .about-me h2 {
@@ -73,14 +66,12 @@ header {
     margin-left: -400px; /* Adjust the margin to move the h2 to the left */
 }
 
-
 /* Style the "About Me" paragraph */
 .about-me p {
     font-size: 30px; /* Increase the paragraph font size */
     line-height: 1.5; /* Adjust line spacing as needed */
     margin-left: -400px;
 }
-
 
 .coding-languages {
     background-color: black;
@@ -91,7 +82,6 @@ header {
     padding: 20px;
     flex-direction: row-reverse; /* Reverse the order of flex items */
 }
-
 
 /* Style the "Coding Languages" header */
 .coding-languages h2 {
@@ -104,7 +94,6 @@ header {
     margin-top: 10px; /* Add top margin to move it up */
 }
 
-
 .coding-photo {
     flex: 1;
     margin-right: 20px;
@@ -114,7 +103,6 @@ header {
     align-items: center;
 }
 
-
 /* Style for individual coding language images */
 .coding-photo img {
     max-width: 800px; /* Increase the max-width for larger images */
@@ -122,33 +110,32 @@ header {
     margin: 10px;
 }
 
-
 /* Media query for smaller screens */
 @media (max-width: 1000px) {
     header {
         padding: 20px;
     }
-   
+    
     .about-me {
         flex-direction: column;
         text-align: center;
     }
-   
+    
     .about-me h2,
     .about-me p {
         margin-left: 0;
     }
-   
+    
     .coding-languages {
         flex-direction: column;
         text-align: center;
     }
-   
+    
     .coding-languages h2 {
         margin-left: 0;
         margin-top: 10px;
     }
-   
+    
     .coding-photo {
         margin-right: 0;
     }
