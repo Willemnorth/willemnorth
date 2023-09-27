@@ -10,6 +10,7 @@ body {
 
 header {
     background-image: url(images/black.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 20px 800px 20px 20px;
@@ -90,59 +91,65 @@ header {
     padding: 20px;
     flex-direction: row-reverse; /* Reverse the order of flex items */
 }
-.coding-photo {
-    flex: 1; /* Allow it to take up available space */
-    margin-right: 20px; /* Adjust the margin to move it to the right of the page */
-}
 
 
 /* Style the "Coding Languages" header */
 .coding-languages h2 {
-    font-size: 60px; /* Increase the heading font size */
+    font-size: 60px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reduce the bottom margin */
     color: blueviolet;
-    margin-left: 20px; /* Adjust the margin to move the h2 to the left */
+    text-align: center; /* Center the header text */
+    margin-left: 0;
+    margin-top: 10px; /* Add top margin to move it up */
 }
 
 
-/* Style the list to remove bullets */
-.no-bullets {
-    list-style-type: none;
+.coding-photo {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
-/* Style each list item with a different neon color */
-.no-bullets li {
-    font-size: 30px; /* Increase the paragraph font size */
-    line-height: 1.5; /* Adjust line spacing as needed */
-    margin-left: 20px; /* Adjust the margin to move the list items to the left */
-    padding-left: 20px; /* Add some left padding to separate from the text */
+/* Style for individual coding language images */
+.coding-photo img {
+    max-width: 800px; /* Increase the max-width for larger images */
+    height: auto;
+    margin: 10px;
 }
 
 
-/* Neon colors for list items */
-.neon-yellow {
-    color: #f4ff00; /* Neon yellow */
-}
-
-
-.neon-pink {
-    color: #ff00d9; /* Neon pink */
-}
-
-
-.neon-green {
-    color: #00ff38; /* Neon green */
-}
-
-
-.neon-blue {
-    color: #00d4ff; /* Neon blue */
-}
-
-
-/* Adjust the alignment for the "Coding Languages" header */
-.left-aligned {
-    margin-left: 20px; /* Adjust the margin to move it further to the left */
+/* Media query for smaller screens */
+@media (max-width: 1000px) {
+    header {
+        padding: 20px;
+    }
+   
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    .about-me h2,
+    .about-me p {
+        margin-left: 0;
+    }
+   
+    .coding-languages {
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    .coding-languages h2 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+   
+    .coding-photo {
+        margin-right: 0;
+    }
 }
