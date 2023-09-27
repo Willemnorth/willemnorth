@@ -110,6 +110,45 @@ header {
     margin: 10px;
 }
 
+.contact {
+    background-color: black;
+    color: white;
+    height: 50vh; /* Set the height to occupy half of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    padding: 20px;
+}
+
+/* Style the "Contact Me" header */
+.contact h2 {
+    font-size: 40px; /* Reduce the heading font size for the smaller section */
+    font-weight: bold;
+    margin-bottom: 10px; /* Reduce the bottom margin */
+    color: blueviolet;
+    text-align: center; /* Center the header text */
+}
+
+/* Style the "Contact Me" paragraph */
+.contact p {
+    font-size: 20px; /* Reduce the paragraph font size for the smaller section */
+    line-height: 1.5; /* Adjust line spacing as needed */
+    text-align: center; /* Center the paragraph text */
+    margin: 0; /* Reset margin to remove default spacing */
+}
+
+.contact-link {
+    color: blueviolet; /* Change the link color */
+    text-decoration: none; /* Remove underlines */
+    font-weight: bold; /* Make the links bold */
+    margin-left: 5px; /* Add some spacing between links */
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Underline the links on hover */
+}
+
+
 /* Media query for smaller screens */
 @media (max-width: 1000px) {
     header {
