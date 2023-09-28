@@ -7,6 +7,15 @@ body {
     color: white;
 }
 
+.orb {
+    position: absolute;
+    top: 0;
+    right: 0; /* Move the iframe to the top-right corner */
+    width: 50%; /* Adjust the width as needed */
+    height: 100%; /* Make the iframe take up the full height of the header */
+    border: none; /* Remove the border */
+}
+
 header {
     background-image: url(images/black.png);
     background-size: cover; 
@@ -14,10 +23,16 @@ header {
     background-attachment: fixed;
     padding: 20px 800px 20px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
+    position: relative;
 }
+
+.color_text {
+    color: blueviolet;
+}
+
 
 /* Style the container for the logo */
 .logo-container {
