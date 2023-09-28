@@ -222,6 +222,7 @@ header {
     .coding-languages {
         flex-direction: column;
         text-align: center;
+        margin-top: 100px;
     }
 
     .coding-languages h2 {
