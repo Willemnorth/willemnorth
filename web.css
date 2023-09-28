@@ -16,6 +16,12 @@ body {
     border: none; /* Remove the border */
 }
 
+@media (max-width: 1000px) {
+    .orb {
+        display: none; /* Hide the .orb element */
+    }
+}
+
 header {
     background-image: url(images/black.png);
     background-size: cover; 
@@ -193,4 +199,36 @@ header {
     .coding-photo {
         margin-right: 0;
     }
+}
+
+
+/* Define a media query for phones */
+@media (max-width: 480px) {
+    /* Adjust styles for phones here */
+    body {
+        font-size: 18px; /* Decrease font size for smaller screens */
+    }
+
+    header {
+        padding: 20px 20px; /* Reduce header padding for phones */
+    }
+
+    .about-me h2,
+    .about-me p {
+        margin-left: 0; /* Center-align text for phones */
+    }
+
+    .coding-languages h2 {
+        margin-left: 0; /* Center-align text for phones */
+    }
+
+    .contact h2 {
+        font-size: 30px; /* Adjust the heading font size for phones */
+    }
+
+    .contact p {
+        font-size: 16px; /* Adjust the paragraph font size for phones */
+    }
+
+    /* Add any other specific styles for phones here */
 }
