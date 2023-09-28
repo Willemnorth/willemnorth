@@ -203,32 +203,36 @@ header {
 
 
 /* Define a media query for phones */
-@media (max-width: 480px) {
-    /* Adjust styles for phones here */
-    body {
-        font-size: 18px; /* Decrease font size for smaller screens */
+@media (max-width: 1000px) {
+    header {
+        padding: 20px;
     }
 
-    header {
-        padding: 20px 20px; /* Reduce header padding for phones */
+    .about-me {
+        flex-direction: column;
+        text-align: center;
     }
 
     .about-me h2,
     .about-me p {
-        margin-left: 0; /* Center-align text for phones */
+        margin-left: 0;
+        margin-right: 20px; /* Add margin to the right for spacing */
+    }
+
+    .coding-languages {
+        flex-direction: column;
+        text-align: center;
     }
 
     .coding-languages h2 {
-        margin-left: 0; /* Center-align text for phones */
+        margin-left: 0;
+        margin-right: 20px; /* Add margin to the right for spacing */
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
-    .contact h2 {
-        font-size: 30px; /* Adjust the heading font size for phones */
+    .coding-photo {
+        margin-right: 0;
     }
-
-    .contact p {
-        font-size: 16px; /* Adjust the paragraph font size for phones */
-    }
-
-    /* Add any other specific styles for phones here */
 }
+    /* Add any other specific styles for phones here */
